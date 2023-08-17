@@ -22,7 +22,8 @@
           </div>
           <div class="campo">
             <i class="fas fa-lock"></i>
-            <input type="password" id="pin" placeholder="PIN" required />
+            <input type="password" id="pin" placeholder="PIN" required oninput="this.value = this.value.replace(/[^0-9]/g, '')" />
+
           </div>
           <input type="submit" value="Iniciar Sesión" class="btn solid" />
 
@@ -52,7 +53,7 @@
           </div>
           <div class="campo">
             <i class="fas fa-user"></i>
-            <input type="text" id="numero-cuenta" placeholder="Número de cuenta" required />
+            <input type="text" id="numero-cuenta" placeholder="Número de cuenta" required oninput="this.value = this.value.replace(/[^0-9]/g, '')"/>
             <div id="error-numero-cuenta" class="error-msg"></div>
           </div>
           <div class="campo">

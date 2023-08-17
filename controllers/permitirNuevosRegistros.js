@@ -26,7 +26,7 @@ registroForm.addEventListener('submit', function (event) {
 
   if (!numeroCuenta.test(numeroCuentaInput.value)) {
     if (/^0\d*/.test(numeroCuentaInput.value)) {
-      mostrarMensajeError(numeroCuentaInput, 'Número de cuenta no puede iniciar con un 0');
+      mostrarMensajeError(numeroCuentaInput, 'Número de cuenta no puede iniciar con 0');
     } else {
       mostrarMensajeError(numeroCuentaInput, 'Número de cuenta inválido');
     }

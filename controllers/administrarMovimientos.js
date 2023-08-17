@@ -1,4 +1,4 @@
-console.log(localStorage)
+console.log("JSON de usuairos (localStorage): ", localStorage)
 let saldoElement = document.getElementById("saldoDisponible");
 let fechaActual
 let saldoActual
