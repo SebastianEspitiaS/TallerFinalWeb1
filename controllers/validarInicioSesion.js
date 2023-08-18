@@ -12,15 +12,15 @@ loginForm.addEventListener('submit', function (event) {
   const accountNumber = accountNumberInput.value;
   const pin = pinInput.value;
   let usuarioEncontrado
-  localStorage.setItem("NumeroCuentaActual", accountNumber);
-  usuario = [JSON.parse(localStorage.getItem(accountNumber))] || null;
-  if (usuario[0] !== null && usuario[0].pin === pin) {
+  usuario = JSON.parse(localStorage.getItem(accountNumber)) || null;
+  if (usuario !== null && usuario.pin === pin) {
     usuarioEncontrado = true;
   }else {
     usuarioEncontrado = false;
   }
 
   if (usuarioEncontrado) {
+    localStorage.setItem("NumeroCuentaActual", accountNumber);
     intentosFallidos = 0;
     accountNumberInput.value = '';
     pinInput.value = '';
