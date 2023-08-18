@@ -30,7 +30,6 @@ input {
   background-color: #fff;
   min-height: 100vh;
   overflow: hidden;
-  
 }
 
 .contenedor-formularios {
@@ -194,7 +193,6 @@ form.formulario-iniciar-sesion {
   width: 45%;
   transition: transform 0.9s ease-in-out;
   transition-delay: 0.6s;
-  
 }
 
 .panel {
@@ -209,7 +207,6 @@ form.formulario-iniciar-sesion {
 .izquierdo {
   pointer-events: all;
   padding: 3rem 35% 2rem 12%;
-  
 }
 
 .derecho {

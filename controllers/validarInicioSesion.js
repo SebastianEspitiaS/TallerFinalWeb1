@@ -1,3 +1,5 @@
+console.log("JSON de usuairos (localStorage): ")
+console.log(localStorage)
 let intentosFallidos = 0;
 const maxIntentos = 3;
 const loginForm = document.getElementById('login-form');
